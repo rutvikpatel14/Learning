@@ -1,11 +1,28 @@
 import './App.css';
+import LocalStorage from './Components/LocalStorage';
 import Navbar from './Components/Navbar';
+import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import Sum from './Components/Sum';
+import Fcomonent from './Components/Fcomonent';
+import Ccomponent from './Components/Ccomponent';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-    </div>
+    <Router>    
+      <Navbar />
+      <>
+      <Routes>
+        <Route path='/' element={<Sum/>}/>
+        <Route path='/Sum' element={<Sum/>}/>
+        <Route path='/LocalStorage' element={<LocalStorage/>}/>
+        <Route path='/function' element={<Fcomonent/>}/>
+        <Route path='/class' element={<Ccomponent/>}/>
+
+      </Routes>
+      
+    </>
+    </Router>
+
   );
 }
 
