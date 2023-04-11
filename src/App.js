@@ -5,6 +5,8 @@ import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import Sum from './Components/Sum';
 import Fcomonent from './Components/Fcomonent';
 import Ccomponent from './Components/Ccomponent';
+import StudentMark from './Components/StudentMark';
+import BgColor from './Components/BgColor';
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
         <Route path='/LocalStorage' element={<LocalStorage/>}/>
         <Route path='/function' element={<Fcomonent/>}/>
         <Route path='/class' element={<Ccomponent/>}/>
-
+        <Route path='/StudentMark' element={<StudentMark/>}/>
+        <Route path='/BgColor' element={<BgColor/>}/>
       </Routes>
       
     </>

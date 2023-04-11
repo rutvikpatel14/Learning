@@ -15,10 +15,10 @@ function Navbar() {
                                 <Link className="nav-link" to="/LocalStorage">Calculator</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/function">Function Component</Link>
+                                <Link className="nav-link" to="/StudentMark">Studenk Marks</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/class">Class Component</Link>
+                                <Link className="nav-link" to="/BgColor">BgColor Change</Link>
                             </li>
                         </ul>
                         <form className="d-flex">

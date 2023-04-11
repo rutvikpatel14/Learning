@@ -47,16 +47,18 @@ class LocalStorage extends Component {
                 <center>
                     <form onSubmit={this.clickProcess.bind(this)}>
                         <br />
-                        <input type="text" name="no1" placeholder='Enter Number' onChange={this.changeProcess.bind(this)} />
-                        <input type="text" name="no2" placeholder='Enter Number' onChange={this.changeProcess.bind(this)} />
+                        No1: <input type="text" name="no1" placeholder='Enter Number' onChange={this.changeProcess.bind(this)} /><br></br>
+                        No2: <input type="text" name="no2" placeholder='Enter Number' onChange={this.changeProcess.bind(this)} />
                         <br />
-                        <input type='button' value='Addition' name='add' onClick={this.clickProcess.bind(this)} />
-                        <input type='button' value='Subtraction' name='sub' onClick={this.clickProcess.bind(this)} />
-                        <input type='button' value='Multiplication' name='mul' onClick={this.clickProcess.bind(this)} />
-                        <input type='button' value='Division' name='div' onClick={this.clickProcess.bind(this)} />
+                        <div className='container my-3 '>
+                            <input type='button'className='mx-2' value='+' name='add' onClick={this.clickProcess.bind(this)} />
+                            <input type='button'className='mx-2' value='-' name='sub' onClick={this.clickProcess.bind(this)} /><br></br>
+                            <input type='button'className='mx-2 my-2' value='*' name='mul' onClick={this.clickProcess.bind(this)} />
+                            <input type='button'className='mx-2' value='/' name='div' onClick={this.clickProcess.bind(this)} />
+                        </div>
+                            Ans:{this.state.temp}
                     </form>
                 </center>
-                {this.state.temp}
             </>
         );
     }
