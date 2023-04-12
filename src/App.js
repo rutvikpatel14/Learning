@@ -7,6 +7,8 @@ import Fcomonent from './Components/Fcomonent';
 import Ccomponent from './Components/Ccomponent';
 import StudentMark from './Components/StudentMark';
 import BgColor from './Components/BgColor';
+import Form from './Components/Form';
+import GetApi from './Components/GetApi';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path='/class' element={<Ccomponent/>}/>
         <Route path='/StudentMark' element={<StudentMark/>}/>
         <Route path='/BgColor' element={<BgColor/>}/>
+        <Route path='/form' element={<Form/>}/>
+        <Route path='/getapi' element={<GetApi/>}/>
       </Routes>
       
     </>
